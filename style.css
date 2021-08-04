@@ -205,7 +205,7 @@ header h1 {
 
 .arrow {
   animation-name: close-arrow;
-  animation-duration: 0.1s;
+  animation-duration: 100ms;
   animation-fill-mode: forwards;
 }
 @keyframes close-arrow {
@@ -226,7 +226,7 @@ header h1 {
   height: 0;
   overflow: hidden;
   animation-name: close-content;
-  animation-duration: 0.1s;
+  animation-duration: 100ms;
   animation-fill-mode: forwards;
 }
 @keyframes close-content {
@@ -240,7 +240,6 @@ header h1 {
 .content p {
   margin-top: 1em;
   font-size: 0.8em;
-  font-weight: 700;
   line-height: 1.5em;
   color: var(--dGB);
 }
@@ -251,7 +250,7 @@ header h1 {
 }
 .list.open .arrow {
   animation-name: open-arrow;
-  animation-duration: 0.1s;
+  animation-duration: 100ms;
   animation-fill-mode: forwards;
 }
 @keyframes open-arrow {
@@ -262,7 +261,7 @@ header h1 {
 .list.open .content {
   /* display: block; */
   animation-name: open-content;
-  animation-duration: 0.1s;
+  animation-duration: 100ms;
   animation-fill-mode: forwards;
 }
 @keyframes open-content {
