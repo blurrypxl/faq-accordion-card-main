@@ -223,19 +223,7 @@ header h1 {
 }
 
 .content {
-  height: 0;
-  overflow: hidden;
-  animation-name: close-content;
-  animation-duration: 100ms;
-  animation-fill-mode: forwards;
-}
-@keyframes close-content {
-  from {
-    height: 20vmin;
-  }
-  to {
-    height: 0;
-  }
+  display: none;
 }
 .content p {
   margin-top: 1em;
@@ -259,31 +247,13 @@ header h1 {
   }
 }
 .list.open .content {
-  /* display: block; */
+  display: block;
   animation-name: open-content;
   animation-duration: 100ms;
   animation-fill-mode: forwards;
 }
-@keyframes open-content {
-  from {
-    height: 0;
-  }
-  to {
-    height: 20vmin;
-  }
-}
 .list.open .content p {
   font-weight: 400;
-}
-@media screen and (min-width: 425px) {
-  @keyframes open-content {
-    from {
-      height: 0;
-    }
-    to {
-      height: 14vmin;
-    }
-  }
 }
 
 /* Footer */
